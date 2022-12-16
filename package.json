@@ -10,8 +10,8 @@
     "nseindia": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc build --output public",
-    "prestart": "npm run build",
+    "build": "tsc",
+    "prestart": "yarn build",
     "start": "node dist/server.js",
     "docs": "typedoc",
     "test": "jest --coverage --testTimeout=600000",
@@ -20,7 +20,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
-      "npm lint --fix",
+      "yarn lint --fix",
       "git add"
     ]
   },

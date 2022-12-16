@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "prestart": "yarn build",
+    "prestart": "yarn build --output public",
     "start": "node dist/server.js",
     "docs": "typedoc",
     "test": "jest --coverage --testTimeout=600000",

@@ -10,7 +10,7 @@
     "nseindia": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc --output public",
+    "build": "tsc build --output public",
     "prestart": "npm run build",
     "start": "node dist/server.js",
     "docs": "typedoc",
